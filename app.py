@@ -11,7 +11,7 @@ import pandas as pd
 import plotly.express as px
 
 # --- Chargement des données ---
-df = pd.read_csv('Z:\\appsante\\air_qualité.csv', sep=';')
+df = pd.read_csv('air_qualité.csv', sep=';')
 df.columns = df.columns.str.strip()
 
 # --- Création de la date complète ---
@@ -152,3 +152,4 @@ with tab4:
 
     st.write(f"Affichage des données du {start_date} au {end_date} :")
     st.dataframe(df_filtered)
+
